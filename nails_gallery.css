@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik Glitch', cursive;
+    font-family: 'Special Elite', cursive;
+}
+
+.container{
+    max-width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.gallery-title{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.gallery-title h1{
+    color: white;
+    text-shadow:
+    1px 0px black,
+    1px 0px black,
+    1px 0px black,
+    1px 0px black,
+    1px 0px black,
+    1px 0px black,
+    1px 0px black,
+    1px 0px black,
+    1px 0px black,
+    5px 5px 1px pink;
+}
+.card-grid{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    overflow: auto;
+}
+
+
+.image{
+    width: 60vw;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.img1{
+    background-image: url(images/img1.avif);
+}
+
+.img2{
+    background-image: url(images/slide2.jpg);
+}
+
+
+.img3{
+    background-image: url(images/slide5.jpg);
+}
+
+.img4{
+    background-image: url(images/slide1.jpg);
+}
+
+.img5{
+    background-image: url(images/img6.webp);
+}
+
+.img6{
+    background-image: url(images/img8.jpg);
+}
+
+.img7{
+    background-image: url(images/slide4.edit.jpg);
+}
+
+.img8{
+    background-image: url(images/img9.webp);
+}

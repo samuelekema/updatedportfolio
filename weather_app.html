@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="icon" href="images/umbrella.png">
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+</head>
+<body>
+    <div id="weather-app">
+        <div class="header">
+            <div class="back-btn">
+                <a href="weather.html">
+                    <button a href="weather.html" type="button" class="btn btn-outline-secondary" id="back-btn">Back
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="app-logo">
+                <h1>
+                    <span>B</span>
+                    <span>R</span>
+                    <span>E</span>
+                    <span>E</span>
+                    <span>Z</span>
+                    <span>E</span>
+                </h1>
+            </div>
+        </div>
+
+        <div id="weather-wrapper">
+            <div id="weather-card">
+                <div class="rain-drop">
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                    <div class="snow"></div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button type="submit" class="btn btn-outline-secondary" type="button" id="submit-btn">Submit</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Enter Zip-code" aria-label="" aria-describedby="basic-addon1" id="location-input">
+                </div>
+                <div class="error">
+                    <p class="error-msg">Please Enter a Zip Code.</p>
+                </div>
+
+                <div id="location-el">
+                    <h1 id="location-data"></h1>&nbsp;&nbsp;
+                    <p id="country-data"></p>
+                </div>
+                <div id="duration">
+                    <p id="time"></p>
+                </div>
+                <div id="weather-icon">
+                    <img src="images/cloudy.png" alt="" id="icon-data">
+                </div>
+                <div id="temp">
+                    <h1 id="temp-data"> <span><sup>o</sup>F</span></h1>
+                </div>
+
+                <div id="card1" class="dataset">
+                    <div id="index" class="info">
+                        <p>DESCRIPTION</p>
+                        <p id="uv-index-data"></p>
+                    </div>
+
+                    <div id="wind" class="info">
+                        <p>WIND</p>
+                        <p id="wind-data"></p>
+                    </div>
+                </div>
+
+                <div id="card2" class="dataset">
+                    <div id="humidity" class="info">
+                        <p>HUMIDITY</p>
+                        <p id="humidity-data"><span></span></p>
+                    </div>
+
+                    <div id="visibility" class="info">
+                        <p>VISIBILITY</p>
+                        <p id="visibility-data"><span></span></p>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+        </div>
+
+    </div>
+    
+    <script src="weather_api.js"></script>
+    <script src="weather_backBtn.js"></script>
+    <script src="weather_front.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+</body>
+</html>

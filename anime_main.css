@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+
+}
+
+.container{
+    max-width: 100%;
+    height: 100vh;
+}
+
+
+
+
+/****navbar****/
+.navbar{
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    z-index: 2000;
+    white-space: nowrap;
+}
+
+.search-option a{
+    margin: 0 20px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.search-option a:hover{
+    color: blue;
+}
+
+.fa-search{
+    cursor: pointer;
+
+}
+
+
+.navbar form{
+    position: relative;
+    right: 500px;
+}
+
+.navbar  .search-option input[type=search]{
+    width: 60%;
+    height: 35px;
+    padding-left: 15px;
+    cursor: pointer;
+
+}
+
+.input-opt{
+    display: none;
+}
+
+.toggle{
+    display: inline-block;
+    transition: all 1s;
+}
+
+.search-option>*{
+    margin: 8px;
+}
+
+
+.navbar .search-option input[type=search]:focus{
+    outline: none;
+}
+
+.navbar .search-option input[type=submit]{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: blue;
+    transition: all 1s ease-in-out;
+    color: white;
+}
+
+
+.navbar .search-option input[type=submit]:hover{
+    background-color: darkblue;
+}
+
+
+/****display ****/
+
+
+.homepage{
+    width: 100%;
+    height: 66%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/membership-img.png);
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    color: white;
+}
+
+.anime-detail{
+    position: relative;
+    top: 48px;
+    padding-left: 30px;
+}
+
+.anime-year li{
+    list-style: none;
+    display: inline-block;
+}
+
+.anime-year li p{
+    display: inline-block;
+    margin: 10px;
+}
+
+.anime-summary{
+    width: 300px;
+    position: relative;
+    top: 20px;
+}
+
+.anime-detail button{
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    margin: 10px;
+}
+
+.anime-detail button a{
+    text-decoration: none;
+    color: white;
+}
+
+.watch-trailer{
+    position: relative;
+    top: 35px;
+}
+
+.anime-detail button:hover{
+    background-color: darkblue;
+}
+
+.anime-detail span{
+    background-color: orange;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+/***trending***/
+
+.trending .title{
+    padding-left: 20px;
+    color: black;
+    background-color: lightblue;
+}
+
+.trending-wrapper{
+   max-width: 100%;
+    height: 200px;
+    background-color: black;
+    border: solid black;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+
+
+.shows{
+    list-style: none;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    border: solid white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+
+
+.show1{
+    background-image: url(images/anime1.jpg);
+}
+.show2{
+    background-image: url(images/anime2.webp);
+}
+.show3{
+    background-image: url(images/membership-img.png);
+}
+
+.show4{
+    background-image: url(images/anime3.jpg);
+}
+
+.show5{
+    background-image: url(images/anime4.jpg);
+}
+
+.show6{
+    background-image: url(images/anime5.jpg);
+}
+
+.show7{
+    background-image: url(images/anime6.jpg);
+}
+.show8{
+    background-image: url(images/anime7.jpe);
+}
+
+.show9{
+    background-image: url(images/anime8.webp);
+}
+
+.show10{
+    background-image: url(images/anime9.jpg);
+}
+
+.show11{
+    background-image: url(images/anime12.jpg);
+}
+
+.show12{
+    background-image: url(images/anime11.jpg);
+}
+
+
+@media(max-width:450px){
+    .navbar{
+        padding: 0;
+    }
+}

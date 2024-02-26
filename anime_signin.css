@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),url(images/signin_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.form-box{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(6, 6, 6, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
+
+.wrapper{
+    color: white;
+    position: absolute;
+    line-height: 2;
+}
+
+.wrapper .title{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .title h1{
+    text-align: center;
+    line-height: 1.2;
+}
+
+.wrapper form>div{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.wrapper form input[type=email], .wrapper form input[type=password]{
+    width: 220px;
+    height: 30px;
+    padding-left: 12px;
+    font-weight: 800;
+    color: white;
+    border: none;
+    background-color: gray;
+}
+
+
+.wrapper form input::placeholder{
+    color: white;
+}
+.wrapper form input:focus{
+    outline: none;
+}
+
+.wrapper form button{
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    background-color: blue;
+    transition: all 1s;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.wrapper form button:hover{
+    background-color: darkblue;
+}
+
+#toggle-pass{
+    cursor: pointer;
+    font-weight: 800;
+    position: absolute;
+    margin-left: 160px;
+}
+
+.forget p{
+    color: gray;
+}
+
+.forget a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
