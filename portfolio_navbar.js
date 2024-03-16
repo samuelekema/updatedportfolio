@@ -26,17 +26,46 @@ theme.addEventListener("click", ()=>{
 })
 
 
-//menu button animate
-function menuClick(){
+//function to animate hamburger icon
+function menuClicked(){
     const menuBar = document.querySelector(".menu-bar");
-    menuBar.addEventListener("click", function(){
-        const dropdown = document.getElementById("dropdown-menu");
-        menuBar.classList.toggle("change");
-        dropdown.classList.toggle("visible");
+    menuBar.addEventListener("click", ()=>{
+        const dropMenu = document.getElementById("dropdownMenu");
+        const myLink = document.querySelectorAll(".myLink")
+        menuBar.classList.toggle("change"); 
+        dropMenu.classList.toggle("makeVisible");
+        for(i=0; i<myLink.length; i++){
+            myLink[i].classList.toggle('showLink');
+        }
+        
     })
 
 }
-menuClick();
+menuClicked();
+
+
+//type effect on text
+
+const div = document.querySelector(".myName");
+const text = `Samuel Ekema`;
+function textTypingEffect(element, text, i=0) {
+    if(i===0) {
+        element.textContent = "";
+    }
+
+    element.textContent += text[i];
+
+    if (i === text.length - 1) {
+        return;
+    }
+
+    setTimeout(() => textTypingEffect(element, text, i+1), 50);
+}
+
+textTypingEffect(div, text);
+
+
+
 
 
 
